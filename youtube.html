@@ -11,8 +11,9 @@
                 margin-top: 0px;
                 margin-bottom: 0px;
             }
+            
             .thumbnail {
-                width: 300px;
+                width: 100%;
             }
 
             .search-bar {
@@ -24,7 +25,7 @@
                 font-size: 14px;
                 font-weight: 500;
                 line-height: 20px;
-                margin-bottom: 12px;
+                margin-bottom: 8px;
             }
 
             .video-stats, .video-author {
@@ -36,17 +37,9 @@
                 margin-bottom: 6px;
             }
 
-            .video-preview {
-                width: 300px;
-                display: inline-block;
-                vertical-align: top;
-                margin-right: 15px;
-            }
-
-            .channel-picture {
-                display: inline-block;
-                width: 50px;
-                vertical-align: top;
+            .video-info-grid {
+                display: grid;
+                grid-template-columns: 50px 1fr;
             }
 
             .profile-picture {
@@ -54,62 +47,220 @@
                 border-radius: 50px;
             }
 
-            .video-info {
-                display: inline-block;
-                width: 230px;
-            }
-
             .thumbnail-row {
                 margin-bottom: 10px;
+            }
+
+            .video-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                column-gap: 16px;
+                row-gap: 20px
             }
         </style>
     </head> 
     <body>
         <input class="search-bar" type="text" placeholder="Search">
         
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="thumbnails/thumbnail-2.jpg">
-            </div>
-            <div>
-                <div class="channel-picture">
-                    <img class="profile-picture" src="channel-pictures/profile-2.jpg">
+        <div class="video-grid">
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail-2.jpg">
                 </div>
-                <div class="video-info">
-                    <p class="video-title">
-                        Hot Toys Wolverine Deluxe Deadpool & Wolverine Unboxing & Review 
-                    </p>
-                    <p class="video-author">         
-                        Justin's Collection
-                    </p>
-                    <p class="video-stats">
-                        46K views &#183; 7 days ago
-                    </p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="thumbnails/thumbnail-3.jpg">
-            </div>
-            <div>
-                <div class="channel-picture">
-                    <img class="profile-picture" src="channel-pictures/profile-3.jpg">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">
-                        Superman (2025).
-                    </p>
-                    <p class="video-author">         
-                        Implicitly Pretentious
-                    </p>
-                    <p class="video-stats">
-                        152K views &#183; 10 days ago
-                    </p>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-pictures/profile-2.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Hot Toys Wolverine Deluxe Unboxing & Review 
+                        </p>
+                        <p class="video-author">         
+                            Justin's Collection
+                        </p>
+                        <p class="video-stats">
+                            46K views &#183; 7 days ago
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
+            
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail-3.jpg">
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-pictures/profile-3.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Superman (2025).
+                        </p>
+                        <p class="video-author">         
+                            Implicitly Pretentious
+                        </p>
+                        <p class="video-stats">
+                            152K views &#183; 10 days ago
+                        </p>
+                    </div>
+                </div>
+            </div>
 
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail-4.jpg">
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-pictures/profile-4.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            The Best Easter Eggs in METAL GEAR SOLID Δ: Snake Eater
+                        </p>
+                        <p class="video-author">         
+                            FunWithGuru
+                        </p>
+                        <p class="video-stats">
+                            110K views &#183; 2 weeks ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail-5.jpg">
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-pictures/profile-5.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Resident Evil 5 Retrospective - Future Without Fear
+                        </p>
+                        <p class="video-author">         
+                            Monty Zander
+                        </p>
+                        <p class="video-stats">
+                            39K views &#183; 1 month ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail-6.jpg">
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-pictures/profile-6.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            How to SPIDER-MAN COSPLAY for BEGINNERS!!! SUIT & FACESHELL
+                        </p>
+                        <p class="video-author">         
+                            capital spidey
+                        </p>
+                        <p class="video-stats">
+                            11K views &#183; 6 days ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail-1.jpg">
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-pictures/profile-1.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            SUPER FRIENDS - The Cartoon That Changed Saturday Mornings
+                        </p>
+                        <p class="video-author">         
+                            Carbon Scoring
+                        </p>
+                        <p class="video-stats">
+                            8.8K views &#183; 2 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail-7.jpg">
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-pictures/profile-7.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            Why Silent Hill Downpour Deserves More
+                        </p>
+                        <p class="video-author">         
+                            eurothug4000
+                        </p>
+                        <p class="video-stats">
+                            110K views &#183; 1 year ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail-8.jpg">
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-pictures/profile-8.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            The Comic That Changed Iron Man Forever
+                        </p>
+                        <p class="video-author">                         
+                            Dilpik
+                        </p>
+                        <p class="video-stats">
+                            148K views &#183; 3 months ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail-9.jpg">
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-pictures/profile-9.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">        
+                            The THING - The Origin of Ben Grimm
+                        </p>
+                        <p class="video-author">                         
+                            MerryMarvelite
+                        </p>
+                        <p class="video-stats">
+                            62K views &#183; 1 month ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </body>
 </html>
